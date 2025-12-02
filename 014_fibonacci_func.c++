@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int fibonacci(int n){
+  if(n == 0) return 0;
+  if(n == 1) return 1;
+
+  return fibonacci(n-1)+fibonacci(n-2);
+}
+
+int main(){
+    int n;
+    cout<<"Enter how many terms of the fibonacci series you want to print: ";
+    cin>>n;
+
+    cout<<"the "<<n<<"th term of the fibonacci series is : "<<endl;
+    for(int i = 0;i<n;i++){
+        cout<<fibonacci(i)<<" , ";
+    }
+
+
+    return 0;
+    
+}

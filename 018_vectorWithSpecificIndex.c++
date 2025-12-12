@@ -10,6 +10,10 @@ void printVector(vector<int> arr){
     cout<<"}"<<endl;
 }
 
+void addElementInStart(vector<int> &arr,int element){
+    arr.insert(arr.begin(),element);
+}
+
 int SpecificLocation(vector<int> &arr,int index,int element){
     if(index<0 || index > arr.size()){
         cout<<"invalid index"<<endl;
@@ -25,6 +29,7 @@ int main(){
     while(1){
         cout<<"Enter the Number what you want to do in this given Vector array : "<<endl;
         cout<<"1.Add number at the End"<<endl;
+        cout<<"2.Add number at the Start"<<endl;
         cout<<"2.Add number at the specific location"<<endl;
         cout<<"3.Delete number at the End"<<endl;
         cout<<"4.Delete number at the Start"<<endl;
@@ -47,6 +52,12 @@ int main(){
 
         }
         else if(n==2){
+            cout<<"Enter the Element: ";
+            cin>>element;
+            addElementInStart(arr,element);
+            printVector(arr);
+        }
+        else if(n==3){
             cout<<"Enter the Element: ";
             cin>>element;
             cout<<"Enter your specific position: ";

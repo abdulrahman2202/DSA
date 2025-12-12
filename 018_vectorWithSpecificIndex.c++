@@ -26,24 +26,27 @@ int SpecificLocation(vector<int> &arr,int index,int element){
 int main(){
     vector<int> arr = {10,20,30,40};
 
+    printVector(arr);
+
     while(1){
         cout<<"Enter the Number what you want to do in this given Vector array : "<<endl;
         cout<<"1.Add number at the End"<<endl;
         cout<<"2.Add number at the Start"<<endl;
-        cout<<"2.Add number at the specific location"<<endl;
-        cout<<"3.Delete number at the End"<<endl;
-        cout<<"4.Delete number at the Start"<<endl;
-        cout<<"5.End the Program "<<endl;
+        cout<<"3.Add number at the specific location"<<endl;
+        cout<<"4.Delete number at the End"<<endl;
+        cout<<"5.Delete number at the Start"<<endl;
+        cout<<"6.End the Program "<<endl;
 
         int n,element,index;
         cout<<"Enter Your chooice: ";
         cin>>n;
 
 
-        if((n==5)||(n>5)){
+        if((n==6)||(n>6)){
             cout<<"Thankyou for using this"<<endl;
             break;
         }
+        // Additon part = 
         else if(n==1){
             cout<<"Enter the Element: ";
             cin>>element;
@@ -65,6 +68,12 @@ int main(){
             SpecificLocation(arr,index,element);
             printVector(arr);
 
+        }
+
+        // deletion part = 
+        else if(n==4){
+            arr.pop_back();
+            printVector(arr);
         }
 
         

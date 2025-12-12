@@ -35,14 +35,15 @@ int main(){
         cout<<"3.Add number at the specific location"<<endl;
         cout<<"4.Delete number at the End"<<endl;
         cout<<"5.Delete number at the Start"<<endl;
-        cout<<"6.End the Program "<<endl;
+        cout<<"6.Delete number at the Specific location"<<endl;
+        cout<<"7.End the Program "<<endl;
 
         int n,element,index;
         cout<<"Enter Your chooice: ";
         cin>>n;
 
 
-        if((n==6)||(n>6)){
+        if((n==7)||(n>7)){
             cout<<"Thankyou for using this"<<endl;
             break;
         }
@@ -78,6 +79,16 @@ int main(){
         else if(n==5){
             arr.erase(arr.begin()); // for deleting in the vector from starting or specific location we use erase.
             printVector(arr);
+        }
+        else if(n==6){
+            cout<<"Enter the index no. for deleting: ";
+            cin>>index;
+            if(index<0 || index>arr.size()){
+                cout<<"invalid index no."<<endl;
+            }else{
+                arr.erase(arr.begin()+index);
+                printVector(arr);
+            }
         }
 
         

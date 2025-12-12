@@ -11,7 +11,7 @@ void printVector(vector<int> arr){
 }
 
 void addElementInStart(vector<int> &arr,int element){
-    arr.insert(arr.begin(),element);
+    arr.insert(arr.begin(),element); // for adding in the vector from starting or specific location we use insert.
 }
 
 int SpecificLocation(vector<int> &arr,int index,int element){
@@ -73,6 +73,10 @@ int main(){
         // deletion part = 
         else if(n==4){
             arr.pop_back();
+            printVector(arr);
+        }
+        else if(n==5){
+            arr.erase(arr.begin()); // for deleting in the vector from starting or specific location we use erase.
             printVector(arr);
         }
 

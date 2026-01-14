@@ -22,7 +22,9 @@ int insertInPos(int arr[],int size,int capacity,int element,int index){
 int main(){
     int arr[10] = {15,7,26,13,88};
     int size = 5;
+    
     int element = 70 , index = 2;
+
     display(arr,size);
 
     insertInPos(arr,size,10,element,index);

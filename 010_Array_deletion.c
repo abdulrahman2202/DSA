@@ -18,10 +18,14 @@ void deleteInPos(int arr[],int size,int index){
 int main(){
     int arr[10] = {15,7,26,13,88};
     int size = 5;
+
+    
     display(arr,size);
     int index = 1;
     deleteInPos(arr,size,index);
     size -=1;
+
+
     display(arr,size);
 
     return 0;

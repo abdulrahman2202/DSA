@@ -37,11 +37,13 @@ void show(struct myArray *a){
 int main (){
     struct myArray marks;
     createArray(&marks, 10, 2);
-    printf("set the value on structure\n");
+    printf("set the value on structure:\n");
     setval(&marks);
 
-    printf("\nshow the value from the structure");
+    printf("\nshow the value from the structure ");
     show(&marks);
+
+
     return 0;
 
 }

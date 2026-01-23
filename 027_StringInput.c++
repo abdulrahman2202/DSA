@@ -7,7 +7,6 @@ int main(){
     cout<<"Enter the string: ";
     cin>>str;
 
-    
     cout<<str<<endl;
 
     return 0;

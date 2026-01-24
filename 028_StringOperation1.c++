@@ -11,6 +11,8 @@ int main(){
     // using size()
     cout<<"size of the str is : "<< str.size() <<endl;
 
+    
+
 // concatenation of 2 or more string
 
     string str1 = "hello ";

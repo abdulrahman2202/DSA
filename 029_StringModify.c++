@@ -23,6 +23,14 @@ cout<<endl;
     cout<<str<<endl;
 cout<<endl;
 
+// Inserting a substring
+    cout<<"Inserting a substring:- "<<endl;
+
+    str.insert(5," king");
+    cout<<str<<endl;
+
+cout<<endl;
+
 
     return 0;
 }

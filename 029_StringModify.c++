@@ -31,6 +31,13 @@ cout<<endl;
 
 cout<<endl;
 
+// Erasing a substring
+    cout<<"Erasing a substring:- "<<endl;
+
+    str.erase(5,5);
+    cout<<str<<endl;
+
+    cout<<endl;
 
     return 0;
 }

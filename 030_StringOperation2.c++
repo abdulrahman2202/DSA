@@ -12,5 +12,10 @@ int main(){
     transform(str.begin(), str.end(), str.begin(), ::toupper);
     cout<<str<<endl;
 
+// Convert the string into lowercase
+    cout<<"\nConvert the string into lowercase: "<<endl;
+    transform(str.begin(),str.end(),str.begin(), ::tolower);
+    cout<<str<<endl;
+
     return 0;
 }
